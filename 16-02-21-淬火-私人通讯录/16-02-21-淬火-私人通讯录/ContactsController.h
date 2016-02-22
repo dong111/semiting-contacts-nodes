@@ -10,4 +10,5 @@
 
 @interface ContactsController : UITableViewController
 
+@property (nonatomic,strong) NSString *userName;
 @end

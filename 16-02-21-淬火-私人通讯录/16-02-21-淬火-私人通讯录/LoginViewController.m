@@ -7,6 +7,7 @@
 //
 
 #import "LoginViewController.h"
+#import "ContactsController.h"
 
 @interface LoginViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *userNameView;
@@ -61,6 +62,13 @@
     NSLog(@"%s",__func__);
     NSLog(@"源控制器:%@",segue.sourceViewController);
     NSLog(@"目标控制器:%@",segue.destinationViewController);
+    //给下一个controller传递数据
+    id destVc = segue.destinationViewController;
+    if ([destVc isKindOfClass:[ContactsController class]]) {
+        ContactsController *contactVc = destVc;
+        contactVc.userName = self.userNameView.text;
+//        contactVc.userName = [self.userNameView text];
+    }
 }
 
 /*
