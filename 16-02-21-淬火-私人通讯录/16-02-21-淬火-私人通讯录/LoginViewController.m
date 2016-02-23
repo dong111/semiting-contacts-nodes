@@ -25,8 +25,8 @@
 //    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(textChange) name:UITextFieldTextDidChangeNotification object:self.userNameView];
 //    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(textChange) name:UITextFieldTextDidChangeNotification object:self.passWordView];
     //控件添加事件来控制登陆按钮显示隐藏
-    [self.userNameView addTarget:self action:@selector(textChange) forControlEvents:UIControlEventEditingChanged];
-    [self.passWordView addTarget:self action:@selector(textChange) forControlEvents:UIControlEventEditingChanged];
+//    [self.userNameView addTarget:self action:@selector(textChange) forControlEvents:UIControlEventEditingChanged];
+//    [self.passWordView addTarget:self action:@selector(textChange) forControlEvents:UIControlEventEditingChanged];
     
     // Do any additional setup after loading the view.
 }
@@ -37,6 +37,10 @@
     [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
+- (IBAction)loginInputChange:(id)sender {
+    
+    [self textChange];
+}
 
 - (void)textChange
 {
