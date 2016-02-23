@@ -92,7 +92,7 @@
                                             <rect key="frame" x="191" y="97" width="51" height="31"/>
                                         </variation>
                                     </switch>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="efZ-sR-dLM">
+                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="efZ-sR-dLM">
                                         <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                         <state key="normal" title="登陆"/>
                                         <variation key="widthClass=compact" fixedFrame="YES">
@@ -157,6 +157,7 @@
                     <navigationItem key="navigationItem" title="私人通讯录登陆" id="84S-8M-rAN"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
+                        <outlet property="loginView" destination="efZ-sR-dLM" id="7fn-IA-8kf"/>
                         <outlet property="passWordView" destination="ykk-w7-L1v" id="1X0-zC-b5s"/>
                         <outlet property="userNameView" destination="Lyg-kh-YeW" id="Tzo-Jm-r9V"/>
                         <segue destination="r7O-vS-fo6" kind="show" identifier="toContactSeg" id="HGw-cy-OuK"/>

@@ -8,10 +8,12 @@
 
 #import "LoginViewController.h"
 #import "ContactsController.h"
+#import "MBProgressHUD+CZ.h"
 
 @interface LoginViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *userNameView;
 @property (weak, nonatomic) IBOutlet UITextField *passWordView;
+@property (weak, nonatomic) IBOutlet UIButton *loginView;
 
 @end
 
@@ -19,7 +21,23 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    //通过消息中心获取文本框改变事件来控制登陆按钮显示隐藏
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(textChange) name:UITextFieldTextDidChangeNotification object:self.userNameView];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(textChange) name:UITextFieldTextDidChangeNotification object:self.passWordView];
+    
     // Do any additional setup after loading the view.
+}
+
+- (void)textChange
+{
+    if (self.userNameView.text.length>0
+        &&self.passWordView.text.length>0) {
+        self.loginView.enabled = YES;
+    }else{
+        self.loginView.enabled = NO;
+    }
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -28,12 +46,21 @@
 }
 - (IBAction)login:(id)sender {
     if (!self.userNameView.hasText) {
-        NSLog(@"请输入用户名！");
+//        NSLog(@"请输入用户名！");
+        [MBProgressHUD showMessage:@"请输入用户名！"];
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            [MBProgressHUD hideHUD];
+        });
+        
         return;
     }
     
     if (!self.passWordView.hasText) {
-        NSLog(@"请输入密码！");
+//        NSLog(@"请输入密码！");
+        [MBProgressHUD showMessage:@"请输入密码！"];
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            [MBProgressHUD hideHUD];
+        });
         return;
     }
     NSString *userName = [self.userNameView text];
@@ -55,8 +82,8 @@
 /**
  *   使用segue跳转下一个界面之前会调用
  *
- *  @param segue  <#segue description#>
- *  @param sender <#sender description#>
+ *  @param segue  连线
+ *  @param sender
  */
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
     NSLog(@"%s",__func__);

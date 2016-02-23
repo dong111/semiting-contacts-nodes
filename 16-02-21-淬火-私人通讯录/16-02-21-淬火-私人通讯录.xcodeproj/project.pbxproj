@@ -18,6 +18,9 @@
 		2BB6C1701C796CCE001695D3 /* _6_02_21_________UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BB6C16F1C796CCE001695D3 /* _6_02_21_________UITests.m */; };
 		2BCE3FD81C7B5DED00C8764C /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BCE3FD71C7B5DED00C8764C /* LoginViewController.m */; };
 		2BCE3FDB1C7B65FC00C8764C /* ContactsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BCE3FDA1C7B65FC00C8764C /* ContactsController.m */; };
+		2BCE3FE21C7BCC1F00C8764C /* MBProgressHUD+CZ.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BCE3FDE1C7BCC1F00C8764C /* MBProgressHUD+CZ.m */; };
+		2BCE3FE31C7BCC1F00C8764C /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2BCE3FDF1C7BCC1F00C8764C /* MBProgressHUD.bundle */; };
+		2BCE3FE41C7BCC1F00C8764C /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BCE3FE11C7BCC1F00C8764C /* MBProgressHUD.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +62,11 @@
 		2BCE3FD71C7B5DED00C8764C /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		2BCE3FD91C7B65FC00C8764C /* ContactsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactsController.h; sourceTree = "<group>"; };
 		2BCE3FDA1C7B65FC00C8764C /* ContactsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactsController.m; sourceTree = "<group>"; };
+		2BCE3FDD1C7BCC1F00C8764C /* MBProgressHUD+CZ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+CZ.h"; sourceTree = "<group>"; };
+		2BCE3FDE1C7BCC1F00C8764C /* MBProgressHUD+CZ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+CZ.m"; sourceTree = "<group>"; };
+		2BCE3FDF1C7BCC1F00C8764C /* MBProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MBProgressHUD.bundle; sourceTree = "<group>"; };
+		2BCE3FE01C7BCC1F00C8764C /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		2BCE3FE11C7BCC1F00C8764C /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,21 +157,14 @@
 		2BB6C17D1C796CD8001695D3 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				2BCE3FDC1C7BCC1F00C8764C /* MBProgressHUD */,
 				2BB6C1831C796EA1001695D3 /* application */,
 				2BB6C1821C796E4C001695D3 /* model */,
 				2BB6C1811C796E43001695D3 /* controller */,
 				2BB6C1801C796E38001695D3 /* views */,
 				2BB6C17F1C796E2B001695D3 /* other */,
-				2BB6C17E1C796E0B001695D3 /* MBProgressHUD */,
 			);
 			name = Classes;
-			sourceTree = "<group>";
-		};
-		2BB6C17E1C796E0B001695D3 /* MBProgressHUD */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = MBProgressHUD;
 			sourceTree = "<group>";
 		};
 		2BB6C17F1C796E2B001695D3 /* other */ = {
@@ -207,6 +208,18 @@
 				2BB6C14B1C796CCE001695D3 /* AppDelegate.m */,
 			);
 			name = application;
+			sourceTree = "<group>";
+		};
+		2BCE3FDC1C7BCC1F00C8764C /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				2BCE3FDD1C7BCC1F00C8764C /* MBProgressHUD+CZ.h */,
+				2BCE3FDE1C7BCC1F00C8764C /* MBProgressHUD+CZ.m */,
+				2BCE3FDF1C7BCC1F00C8764C /* MBProgressHUD.bundle */,
+				2BCE3FE01C7BCC1F00C8764C /* MBProgressHUD.h */,
+				2BCE3FE11C7BCC1F00C8764C /* MBProgressHUD.m */,
+			);
+			path = MBProgressHUD;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -313,6 +326,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2BB6C15A1C796CCE001695D3 /* LaunchScreen.storyboard in Resources */,
+				2BCE3FE31C7BCC1F00C8764C /* MBProgressHUD.bundle in Resources */,
 				2BB6C1571C796CCE001695D3 /* Assets.xcassets in Resources */,
 				2BB6C1521C796CCE001695D3 /* Main.storyboard in Resources */,
 			);
@@ -344,7 +358,9 @@
 				2BCE3FDB1C7B65FC00C8764C /* ContactsController.m in Sources */,
 				2BB6C14C1C796CCE001695D3 /* AppDelegate.m in Sources */,
 				2BB6C1491C796CCE001695D3 /* main.m in Sources */,
+				2BCE3FE21C7BCC1F00C8764C /* MBProgressHUD+CZ.m in Sources */,
 				2BCE3FD81C7B5DED00C8764C /* LoginViewController.m in Sources */,
+				2BCE3FE41C7BCC1F00C8764C /* MBProgressHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
