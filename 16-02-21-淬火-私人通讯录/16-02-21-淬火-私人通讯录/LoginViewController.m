@@ -22,11 +22,19 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     //通过消息中心获取文本框改变事件来控制登陆按钮显示隐藏
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(textChange) name:UITextFieldTextDidChangeNotification object:self.userNameView];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(textChange) name:UITextFieldTextDidChangeNotification object:self.passWordView];
+//    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(textChange) name:UITextFieldTextDidChangeNotification object:self.userNameView];
+//    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(textChange) name:UITextFieldTextDidChangeNotification object:self.passWordView];
+    
     
     // Do any additional setup after loading the view.
 }
+
+- (void)dealloc
+{
+    //退订通知
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
 
 - (void)textChange
 {
