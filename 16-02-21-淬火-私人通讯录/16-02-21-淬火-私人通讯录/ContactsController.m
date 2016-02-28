@@ -99,9 +99,10 @@
     
     NSString *requiredId = @"contact";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:requiredId];
-    if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:requiredId];
-    }
+    //测试tableviewCell是否不需要初始化，在storybord中赋值Idendtify就可以了
+//    if (cell == nil) {
+//        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:requiredId];
+//    }
     Contact *contact = self.contacts[indexPath.row];
     [cell.textLabel setText:contact.name];
     [cell.detailTextLabel setText:contact.tel];
