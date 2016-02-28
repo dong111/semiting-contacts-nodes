@@ -16,7 +16,19 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    //获取应用沙盒目录
+    //TheNSSearchPathDirectoryse constants specify the location of a variety of directories by the
+    
+    NSString *doc = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
+    NSLog(@"documentPath : %@",doc);
+
+    //document 目录中添加文件
+    NSString *listPath = [doc stringByAppendingPathComponent:@"data.plist"];
+    NSLog(@"listPath : %@",listPath);
+
+    
+    //读取数据
+    NSArray *array = [NSArray arrayWithContentsOfFile:listPath];    NSLog(@"%@",array);
 }
 
 - (void)didReceiveMemoryWarning {
