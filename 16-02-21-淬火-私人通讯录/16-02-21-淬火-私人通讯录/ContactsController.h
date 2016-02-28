@@ -7,8 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AddContactController.h"
 
-@interface ContactsController : UITableViewController
+@interface ContactsController : UITableViewController <AddContactControllerDelegate>
 
 @property (nonatomic,strong) NSString *userName;
+
+
+
 @end

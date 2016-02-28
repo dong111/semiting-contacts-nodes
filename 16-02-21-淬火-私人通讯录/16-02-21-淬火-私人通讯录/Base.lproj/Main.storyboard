@@ -55,7 +55,7 @@
                                             <rect key="frame" x="8" y="53" width="67" height="21"/>
                                         </variation>
                                     </label>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Lyg-kh-YeW">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="zz" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Lyg-kh-YeW">
                                         <rect key="frame" x="-25" y="-30" width="97" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -75,19 +75,16 @@
                                             <rect key="frame" x="0.0" y="102" width="60" height="21"/>
                                         </variation>
                                     </label>
-                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kXe-3p-OYN">
-                                        <rect key="frame" x="-25" y="-15" width="51" height="31"/>
-                                        <variation key="widthClass=compact" fixedFrame="YES">
-                                            <rect key="frame" x="63" y="97" width="51" height="31"/>
-                                        </variation>
-                                    </switch>
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dla-aS-T2f">
                                         <rect key="frame" x="-25" y="-15" width="51" height="31"/>
                                         <variation key="widthClass=compact" fixedFrame="YES">
                                             <rect key="frame" x="191" y="97" width="51" height="31"/>
                                         </variation>
+                                        <connections>
+                                            <action selector="autoLoginSwitch:" destination="Ugk-pb-ZZo" eventType="valueChanged" id="tau-eA-Pfc"/>
+                                        </connections>
                                     </switch>
-                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="efZ-sR-dLM">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="efZ-sR-dLM">
                                         <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                         <state key="normal" title="登陆"/>
                                         <variation key="widthClass=compact" fixedFrame="YES">
@@ -106,7 +103,7 @@
                                             <rect key="frame" x="127" y="102" width="56" height="21"/>
                                         </variation>
                                     </label>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ykk-w7-L1v">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="xx" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ykk-w7-L1v">
                                         <rect key="frame" x="-25" y="-30" width="97" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -117,6 +114,15 @@
                                             <action selector="loginInputChange:" destination="Ugk-pb-ZZo" eventType="editingChanged" id="qIl-5T-giX"/>
                                         </connections>
                                     </textField>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kXe-3p-OYN">
+                                        <rect key="frame" x="-25" y="-15" width="51" height="31"/>
+                                        <variation key="widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="63" y="97" width="51" height="31"/>
+                                        </variation>
+                                        <connections>
+                                            <action selector="remeberUsernameSwitch:" destination="Ugk-pb-ZZo" eventType="valueChanged" id="mvi-Ja-ro5"/>
+                                        </connections>
+                                    </switch>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <variation key="default">
@@ -125,11 +131,11 @@
                                         <exclude reference="vUL-YR-Crq"/>
                                         <exclude reference="Lyg-kh-YeW"/>
                                         <exclude reference="5tB-ps-fU1"/>
-                                        <exclude reference="kXe-3p-OYN"/>
                                         <exclude reference="Dla-aS-T2f"/>
                                         <exclude reference="efZ-sR-dLM"/>
                                         <exclude reference="6PQ-e5-rRD"/>
                                         <exclude reference="ykk-w7-L1v"/>
+                                        <exclude reference="kXe-3p-OYN"/>
                                     </mask>
                                 </variation>
                                 <variation key="widthClass=compact" fixedFrame="YES">
@@ -139,11 +145,11 @@
                                         <include reference="vUL-YR-Crq"/>
                                         <include reference="Lyg-kh-YeW"/>
                                         <include reference="5tB-ps-fU1"/>
-                                        <include reference="kXe-3p-OYN"/>
                                         <include reference="Dla-aS-T2f"/>
                                         <include reference="efZ-sR-dLM"/>
                                         <include reference="6PQ-e5-rRD"/>
                                         <include reference="ykk-w7-L1v"/>
+                                        <include reference="kXe-3p-OYN"/>
                                     </mask>
                                 </variation>
                             </view>
@@ -163,8 +169,10 @@
                     <navigationItem key="navigationItem" title="私人通讯录登陆" id="84S-8M-rAN"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
+                        <outlet property="autoLoginSwitch" destination="Dla-aS-T2f" id="hTe-RE-liE"/>
                         <outlet property="loginView" destination="efZ-sR-dLM" id="7fn-IA-8kf"/>
                         <outlet property="passWordView" destination="ykk-w7-L1v" id="1X0-zC-b5s"/>
+                        <outlet property="remeberPwdSWitch" destination="kXe-3p-OYN" id="uZ1-YU-Jh5"/>
                         <outlet property="userNameView" destination="Lyg-kh-YeW" id="Tzo-Jm-r9V"/>
                         <segue destination="r7O-vS-fo6" kind="show" identifier="toContactSeg" id="HGw-cy-OuK"/>
                     </connections>
@@ -202,12 +210,104 @@
                                 <action selector="loginOutClick:" destination="r7O-vS-fo6" id="tvv-T7-U8k"/>
                             </connections>
                         </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="5wV-0t-tIj">
+                            <connections>
+                                <segue destination="wQ0-SX-xD5" kind="show" id="FkA-1O-uLM"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pgz-0L-Jcg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-763.5" y="214"/>
+        </scene>
+        <!--添加联系人-->
+        <scene sceneID="ZKL-Vi-dJR">
+            <objects>
+                <viewController id="wQ0-SX-xD5" customClass="AddContactController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="is5-W7-s30"/>
+                        <viewControllerLayoutGuide type="bottom" id="9Dh-Ib-deK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jK8-mx-WPA">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="姓名：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lL4-0d-Xg0">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="38" y="132" width="51" height="21"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="电话：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QsL-eS-XxF">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="38" y="179" width="51" height="21"/>
+                                </variation>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eYV-qe-LqF">
+                                <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="112" y="175" width="171" height="30"/>
+                                </variation>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="B1h-Tr-Vug">
+                                <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="116" y="123" width="163" height="30"/>
+                                </variation>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DNX-kB-LUC">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="保存"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="145" y="274" width="30" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="saveContact:" destination="wQ0-SX-xD5" eventType="touchUpInside" id="zSa-nG-l7O"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="lL4-0d-Xg0"/>
+                                <exclude reference="QsL-eS-XxF"/>
+                                <exclude reference="eYV-qe-LqF"/>
+                                <exclude reference="B1h-Tr-Vug"/>
+                                <exclude reference="DNX-kB-LUC"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="lL4-0d-Xg0"/>
+                                <include reference="QsL-eS-XxF"/>
+                                <include reference="eYV-qe-LqF"/>
+                                <include reference="B1h-Tr-Vug"/>
+                                <include reference="DNX-kB-LUC"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="添加联系人" id="ENS-fb-GoZ"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="contactName" destination="B1h-Tr-Vug" id="DXg-CV-TLo"/>
+                        <outlet property="contactPhone" destination="eYV-qe-LqF" id="AsE-Sa-oyU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yVE-fF-XAE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-196.5" y="214"/>
         </scene>
     </scenes>
 </document>

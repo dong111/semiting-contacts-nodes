@@ -14,6 +14,8 @@
 @property (weak, nonatomic) IBOutlet UITextField *userNameView;
 @property (weak, nonatomic) IBOutlet UITextField *passWordView;
 @property (weak, nonatomic) IBOutlet UIButton *loginView;
+@property (weak, nonatomic) IBOutlet UISwitch *remeberPwdSWitch;
+@property (weak, nonatomic) IBOutlet UISwitch *autoLoginSwitch;
 
 @end
 
@@ -80,17 +82,24 @@
     NSString *userName = [self.userNameView text];
     NSString *passWd = [self.passWordView text];
     
-    if ([userName isEqualToString:@"zz"]
-        &&[passWd isEqualToString:@"xx"]) {
-        
-        
-        NSLog(@"登陆成功！");
-        
-        [self performSegueWithIdentifier:@"toContactSeg" sender:nil];
-        
-    }else{
-        NSLog(@"用户名或密码不正确！");
-    }
+    [MBProgressHUD showMessage:@"登陆中……"];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        //隐藏登陆消息框
+        [MBProgressHUD hideHUD];
+        if ([userName isEqualToString:@"zz"]
+            &&[passWd isEqualToString:@"xx"]) {
+//            NSLog(@"登陆成功！");
+            [self performSegueWithIdentifier:@"toContactSeg" sender:nil];
+            //判断是否要记住用户密码
+            
+        }else{
+//            NSLog(@"用户名或密码不正确！");
+            //给一个错误的提示
+            [MBProgressHUD showError:@"帐号或者密码不正确"];
+        }
+    });
+    
+
 }
 
 /**
@@ -111,15 +120,35 @@
 //        contactVc.userName = [self.userNameView text];
     }
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+/**
+ *  监听记住密码的事件
+ *
+ *  @param sender <#sender description#>
+ */
+- (IBAction)remeberUsernameSwitch:(id)sender {
+    
+    //如果记住密码为关闭状态，自动登录为开启状态，怎自动登录应该改变成关闭状态
+    if (self.remeberPwdSWitch.isOn==NO
+        &&self.autoLoginSwitch.isOn==YES) {
+//        self.autoLoginSwitch.on = NO;
+        [self.autoLoginSwitch setOn:NO animated:YES];
+    }
+    
 }
-*/
+/**
+ *  监听自动登录按钮switch事件
+ *
+ *  @param sender <#sender description#>
+ */
+- (IBAction)autoLoginSwitch:(id)sender {
+    if (self.autoLoginSwitch.isOn==NO
+        &&self.remeberPwdSWitch.isOn==YES) {
+//        self.remeberPwdSWitch.on = NO;
+        
+       [self.remeberPwdSWitch setOn:NO animated:YES];
+    }
+    
+}
+
 
 @end
