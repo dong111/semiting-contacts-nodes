@@ -66,7 +66,9 @@
     [self.contacts addObject:contact];
     
     //局部刷新
+    NSIndexPath *lastPath = [NSIndexPath indexPathForRow:self.contacts.count-1 inSection:0];
     
+    [self.tableView insertRowsAtIndexPaths:@[lastPath] withRowAnimation:UITableViewRowAnimationRight];
     
     [self.navigationController popViewControllerAnimated:YES];
     
