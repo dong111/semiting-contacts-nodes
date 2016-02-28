@@ -30,10 +30,21 @@
     //读取数据
     NSArray *array = [NSArray arrayWithContentsOfFile:listPath];    NSLog(@"%@",array);
 }
+//plist文件中数据写入
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+    NSArray *array = @[@"test1",@"test2"];
+    
+    NSString *doc = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
+   
+    
+    //document 目录中添加文件
+    NSString *listPath = [doc stringByAppendingPathComponent:@"data.plist"];
+    
+    
+    //写入数据
+    [array writeToFile:listPath atomically:YES];
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 @end
