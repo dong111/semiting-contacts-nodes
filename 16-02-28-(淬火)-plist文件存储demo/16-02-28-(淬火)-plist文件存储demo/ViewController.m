@@ -30,8 +30,22 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     //获取应用沙盒目录
-    //TheNSSearchPathDirectoryse constants specify the location of a variety of directories by the
+    //1.控制台打印沙盒路径，使用finder-前往查看
+    //2.控制台密令命令打印沙盒路径,打开终端 使用cd open 进入
+    //3.使用simpholer工具
+    //4.可以使用断点 输入po NSHomeDirectory()
     
+    //获取缓存逻辑
+    NSString *cachePath = [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) lastObject];
+    NSLog(@"%@",cachePath);
+    
+    //存放临时文件的路径
+    NSString *tempPath =  NSTemporaryDirectory();
+     NSLog(@"%@",tempPath);
+    
+    //主目录
+    NSString *homePath = NSHomeDirectory();
+    NSLog(@"%@",homePath);
 }
 
 
