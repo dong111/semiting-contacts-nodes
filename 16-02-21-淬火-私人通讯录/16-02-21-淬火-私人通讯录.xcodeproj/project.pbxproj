@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2BB0B6611C80B32900D3D117 /* AddContactController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BB0B6601C80B32900D3D117 /* AddContactController.m */; };
+		2BB0B6641C826E1F00D3D117 /* Contact.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BB0B6631C826E1F00D3D117 /* Contact.m */; };
+		2BB0B6671C828B0400D3D117 /* EditContactController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BB0B6661C828B0400D3D117 /* EditContactController.m */; };
 		2BB6C1491C796CCE001695D3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BB6C1481C796CCE001695D3 /* main.m */; };
 		2BB6C14C1C796CCE001695D3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BB6C14B1C796CCE001695D3 /* AppDelegate.m */; };
 		2BB6C14F1C796CCE001695D3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BB6C14E1C796CCE001695D3 /* ViewController.m */; };
@@ -41,6 +44,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2BB0B65F1C80B32900D3D117 /* AddContactController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddContactController.h; sourceTree = "<group>"; };
+		2BB0B6601C80B32900D3D117 /* AddContactController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddContactController.m; sourceTree = "<group>"; };
+		2BB0B6621C826E1F00D3D117 /* Contact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Contact.h; sourceTree = "<group>"; };
+		2BB0B6631C826E1F00D3D117 /* Contact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Contact.m; sourceTree = "<group>"; };
+		2BB0B6651C828B0400D3D117 /* EditContactController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditContactController.h; sourceTree = "<group>"; };
+		2BB0B6661C828B0400D3D117 /* EditContactController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditContactController.m; sourceTree = "<group>"; };
 		2BB6C1441C796CCE001695D3 /* 16-02-21-淬火-私人通讯录.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "16-02-21-淬火-私人通讯录.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BB6C1481C796CCE001695D3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2BB6C14A1C796CCE001695D3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -190,6 +199,10 @@
 				2BCE3FD71C7B5DED00C8764C /* LoginViewController.m */,
 				2BCE3FD91C7B65FC00C8764C /* ContactsController.h */,
 				2BCE3FDA1C7B65FC00C8764C /* ContactsController.m */,
+				2BB0B65F1C80B32900D3D117 /* AddContactController.h */,
+				2BB0B6601C80B32900D3D117 /* AddContactController.m */,
+				2BB0B6651C828B0400D3D117 /* EditContactController.h */,
+				2BB0B6661C828B0400D3D117 /* EditContactController.m */,
 			);
 			name = controller;
 			sourceTree = "<group>";
@@ -197,6 +210,8 @@
 		2BB6C1821C796E4C001695D3 /* model */ = {
 			isa = PBXGroup;
 			children = (
+				2BB0B6621C826E1F00D3D117 /* Contact.h */,
+				2BB0B6631C826E1F00D3D117 /* Contact.m */,
 			);
 			name = model;
 			sourceTree = "<group>";
@@ -355,11 +370,14 @@
 			files = (
 				2BB6C14F1C796CCE001695D3 /* ViewController.m in Sources */,
 				2BB6C1551C796CCE001695D3 /* _6_02_21_________.xcdatamodeld in Sources */,
+				2BB0B6641C826E1F00D3D117 /* Contact.m in Sources */,
 				2BCE3FDB1C7B65FC00C8764C /* ContactsController.m in Sources */,
 				2BB6C14C1C796CCE001695D3 /* AppDelegate.m in Sources */,
 				2BB6C1491C796CCE001695D3 /* main.m in Sources */,
 				2BCE3FE21C7BCC1F00C8764C /* MBProgressHUD+CZ.m in Sources */,
 				2BCE3FD81C7B5DED00C8764C /* LoginViewController.m in Sources */,
+				2BB0B6611C80B32900D3D117 /* AddContactController.m in Sources */,
+				2BB0B6671C828B0400D3D117 /* EditContactController.m in Sources */,
 				2BCE3FE41C7BCC1F00C8764C /* MBProgressHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
