@@ -217,6 +217,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="cMO-IG-jjA" kind="show" id="Y8u-Lw-yeF"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -327,7 +330,101 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yVE-fF-XAE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-196.5" y="214"/>
+            <point key="canvasLocation" x="73.5" y="-130"/>
+        </scene>
+        <!--编辑联系人-->
+        <scene sceneID="BLk-2c-2Ml">
+            <objects>
+                <viewController id="cMO-IG-jjA" customClass="EditContactController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="AWJ-Al-7RF"/>
+                        <viewControllerLayoutGuide type="bottom" id="gNZ-yt-LU9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kQI-UF-1md">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="姓名:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IjW-gh-fLO">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="23" y="132" width="39" height="21"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="电话:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dSN-0C-O0L">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="26" y="188" width="39" height="21"/>
+                                </variation>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Um0-D6-pSV">
+                                <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="106" y="129" width="161" height="30"/>
+                                </variation>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fUb-1B-hQo">
+                                <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="100" y="184" width="161" height="30"/>
+                                </variation>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O2E-py-1hQ">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="保存"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="114" y="282" width="30" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="saveContact:" destination="cMO-IG-jjA" eventType="touchUpInside" id="Qfh-JQ-pft"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="IjW-gh-fLO"/>
+                                <exclude reference="dSN-0C-O0L"/>
+                                <exclude reference="Um0-D6-pSV"/>
+                                <exclude reference="fUb-1B-hQo"/>
+                                <exclude reference="O2E-py-1hQ"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="IjW-gh-fLO"/>
+                                <include reference="dSN-0C-O0L"/>
+                                <include reference="Um0-D6-pSV"/>
+                                <include reference="fUb-1B-hQo"/>
+                                <include reference="O2E-py-1hQ"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="编辑联系人" id="j3C-hI-TOj">
+                        <barButtonItem key="rightBarButtonItem" systemItem="edit" id="RLk-Tg-5MN">
+                            <connections>
+                                <action selector="editContact:" destination="cMO-IG-jjA" id="VXE-N6-5gR"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="contactName" destination="Um0-D6-pSV" id="MWJ-zg-Ep7"/>
+                        <outlet property="contactTel" destination="fUb-1B-hQo" id="Xxc-Pd-w0k"/>
+                        <outlet property="saveContactBtn" destination="O2E-py-1hQ" id="cGF-7V-HDY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ooo-Wa-aFy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="61.5" y="421"/>
         </scene>
     </scenes>
 </document>

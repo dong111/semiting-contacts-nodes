@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 #import "AddContactController.h"
+#import "Contact.h"
+#import "EditContactController.h"
 
-@interface ContactsController : UITableViewController <AddContactControllerDelegate>
+@interface ContactsController : UITableViewController <AddContactControllerDelegate,EditContactControllerDelegate>
 
 @property (nonatomic,strong) NSString *userName;
 

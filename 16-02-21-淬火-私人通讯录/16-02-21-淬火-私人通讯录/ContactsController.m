@@ -7,7 +7,6 @@
 //
 
 #import "ContactsController.h"
-#import "Contact.h"
 
 @interface ContactsController ()
 
@@ -52,14 +51,21 @@
         AddContactController *addController = destVc;
         addController.delege = self;
       
-    }else{
-       
+    }else if([destVc isKindOfClass:[EditContactController class]]){
+       //goto编辑控制器,获取controller
+        EditContactController *editController = destVc;
+        //获取对应索引联系人
+        editController.contact = self.contacts[self.tableView.indexPathForSelectedRow.row];
+        editController.delegate = self;
+        
     }
     
 //    NSLog(@"%s",__func__);
 }
 
+
 //存储联系人
+#pragma -mark 实现子控制器的代理方法 添加联系人
 - (void)saveContactWithName:(NSString *)name tel:(NSString *)te
 {
     Contact *contact = [[Contact alloc] initContactWithName:name AndTel:te];
@@ -77,9 +83,22 @@
     
     
 }
+#pragma --mark 编辑联系人控制代理
+- (void)editContactViewController:(id)editController saveEditContact:(Contact *)contact
+{
+    //隐藏编辑联系人控制器
+    [self.navigationController popViewControllerAnimated:YES];
+    
+    //更改数据
+    NSInteger row = [self.contacts indexOfObject:contact];
+    
+    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:row inSection:0];
+    //局部刷新数据
+    [self.tableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationLeft];
+    
+    
 
-
-
+}
 
 
 
