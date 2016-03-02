@@ -16,6 +16,8 @@
 		2B7F29791C8343B20088ECFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B7F29771C8343B20088ECFD /* LaunchScreen.storyboard */; };
 		2B7F29841C8343B20088ECFD /* _6_02_28______NSCodingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B7F29831C8343B20088ECFD /* _6_02_28______NSCodingTests.m */; };
 		2B7F298F1C8343B20088ECFD /* _6_02_28______NSCodingUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B7F298E1C8343B20088ECFD /* _6_02_28______NSCodingUITests.m */; };
+		2B7F299E1C83BDE70088ECFD /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B7F299D1C83BDE70088ECFD /* Person.m */; };
+		2BC7DBFC1C872AF9006C823A /* CDContact.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BC7DBFB1C872AF9006C823A /* CDContact.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,10 @@
 		2B7F298A1C8343B20088ECFD /* 16-02-28-(淬火)-NSCodingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "16-02-28-(淬火)-NSCodingUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B7F298E1C8343B20088ECFD /* _6_02_28______NSCodingUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_6_02_28______NSCodingUITests.m"; sourceTree = "<group>"; };
 		2B7F29901C8343B20088ECFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B7F299C1C83BDE70088ECFD /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		2B7F299D1C83BDE70088ECFD /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		2BC7DBFA1C872AF9006C823A /* CDContact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDContact.h; sourceTree = "<group>"; };
+		2BC7DBFB1C872AF9006C823A /* CDContact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDContact.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +119,10 @@
 				2B7F297A1C8343B20088ECFD /* Info.plist */,
 				2B7F29721C8343B20088ECFD /* _6_02_28______NSCoding.xcdatamodeld */,
 				2B7F29661C8343B20088ECFD /* Supporting Files */,
+				2B7F299C1C83BDE70088ECFD /* Person.h */,
+				2B7F299D1C83BDE70088ECFD /* Person.m */,
+				2BC7DBFA1C872AF9006C823A /* CDContact.h */,
+				2BC7DBFB1C872AF9006C823A /* CDContact.m */,
 			);
 			path = "16-02-28-(淬火)-NSCoding";
 			sourceTree = "<group>";
@@ -275,6 +285,8 @@
 			files = (
 				2B7F296E1C8343B20088ECFD /* ViewController.m in Sources */,
 				2B7F29741C8343B20088ECFD /* _6_02_28______NSCoding.xcdatamodeld in Sources */,
+				2B7F299E1C83BDE70088ECFD /* Person.m in Sources */,
+				2BC7DBFC1C872AF9006C823A /* CDContact.m in Sources */,
 				2B7F296B1C8343B20088ECFD /* AppDelegate.m in Sources */,
 				2B7F29681C8343B20088ECFD /* main.m in Sources */,
 			);
@@ -502,6 +514,7 @@
 				2B7F29951C8343B20088ECFD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2B7F29961C8343B20088ECFD /* Build configuration list for PBXNativeTarget "16-02-28-(淬火)-NSCodingTests" */ = {
 			isa = XCConfigurationList;
@@ -510,6 +523,7 @@
 				2B7F29981C8343B20088ECFD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2B7F29991C8343B20088ECFD /* Build configuration list for PBXNativeTarget "16-02-28-(淬火)-NSCodingUITests" */ = {
 			isa = XCConfigurationList;
@@ -518,6 +532,7 @@
 				2B7F299B1C8343B20088ECFD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
