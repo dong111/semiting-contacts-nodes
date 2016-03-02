@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "Person.h"
+#import "CDContact.h"
 
 @interface ViewController ()
 
@@ -50,7 +51,7 @@
 
 - (void) readPerson
 {
-    Person *person = [NSKeyedUnarchiver unarchiveObjectWithFile:self.self.archivePath];
+    Person *person = [NSKeyedUnarchiver unarchiveObjectWithFile:self.archivePath];
     NSLog(@"%@",person.name);
 }
 
