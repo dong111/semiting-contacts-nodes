@@ -10,6 +10,12 @@
 #import "ContactsController.h"
 #import "MBProgressHUD+CZ.h"
 
+//定义用户偏好设置的key 防止写错
+#define remenberPwdKey @"remenberPwd" //记住密码
+#define autoLoginKey @"autoLogin" //自动登录
+#define userNameKey @"userName"
+#define passWordKey @"passWord"
+
 @interface LoginViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *userNameView;
 @property (weak, nonatomic) IBOutlet UITextField *passWordView;
@@ -29,6 +35,30 @@
     //控件添加事件来控制登陆按钮显示隐藏
 //    [self.userNameView addTarget:self action:@selector(textChange) forControlEvents:UIControlEventEditingChanged];
 //    [self.passWordView addTarget:self action:@selector(textChange) forControlEvents:UIControlEventEditingChanged];
+    
+    //设置开往的默认值
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    、
+    self.remeberPwdSWitch.on = [defaults boolForKey:remenberPwdKey];
+    self.autoLoginSwitch.on = [defaults boolForKey:autoLoginKey];
+    
+    //设置账号密码默认值
+    self.userNameView.text = [defaults stringForKey:userNameKey];
+    if (self.remeberPwdSWitch.isOn) {
+        self.passWordView.text = [defaults stringForKey:passWordKey];
+    }
+    
+    //调用文本变化的方法
+    [self textChange];
+    
+    //如果自动登录  延迟自动登录
+    if (self.autoLoginSwitch.isOn) {
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            [self login:nil];
+        });
+    }
+
+    
     
     // Do any additional setup after loading the view.
 }
@@ -91,7 +121,13 @@
 //            NSLog(@"登陆成功！");
             [self performSegueWithIdentifier:@"toContactSeg" sender:nil];
             //判断是否要记住用户密码
-            
+            NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+            [defaults setObject:userName forKey:userNameKey];
+            if (self.remeberPwdSWitch.isOn) {
+                [defaults setObject:passWd forKey:passWordKey];
+            }
+            //同步数据
+            [defaults synchronize];
         }else{
 //            NSLog(@"用户名或密码不正确！");
             //给一个错误的提示
@@ -134,6 +170,8 @@
         [self.autoLoginSwitch setOn:NO animated:YES];
     }
     
+    [self saveSwitchValuseToPerference];
+    
 }
 /**
  *  监听自动登录按钮switch事件
@@ -147,8 +185,23 @@
         
        [self.remeberPwdSWitch setOn:NO animated:YES];
     }
+    [self saveSwitchValuseToPerference];
+}
+
+
+//保存开关数据到用户偏好设置
+- (void) saveSwitchValuseToPerference
+{
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    
+    [defaults setBool:self.remeberPwdSWitch.isOn forKey:remenberPwdKey];
+    [defaults setBool:self.autoLoginSwitch.isOn forKey:autoLoginKey];
+    
+    
+    [defaults synchronize];
     
 }
+
 
 
 @end
