@@ -34,25 +34,52 @@
 }
 
 - (IBAction)loginOutClick:(id)sender {
-    //注销
-    UIActionSheet *sheet = [[UIActionSheet alloc]initWithTitle:@"提醒" delegate:self cancelButtonTitle:@"取消" destructiveButtonTitle:@"确认" otherButtonTitles:nil, nil];
+    //注销  NSLocalizedString 国际化使用
+    NSString *cancelButtonTitle = NSLocalizedString(@"取消", nil);
+    NSString *destructiveButtonTitle = NSLocalizedString(@"确定", nil);
     
-    [sheet showInView:self.view];
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:nil message:nil preferredStyle:UIAlertControllerStyleActionSheet];
     
-//    [self.navigationController popViewControllerAnimated:YES];
-}
-
-
-- (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex
-{
-//    NSLog(@"%ld",buttonIndex);
-    if (buttonIndex==0) {
-        //点击确认按钮
+   //create the actions
+    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:cancelButtonTitle style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+//        NSLog(@"取消");
+    }];
+    
+    
+    UIAlertAction *desttructiveAction = [UIAlertAction actionWithTitle:destructiveButtonTitle style:UIAlertActionStyleDestructive handler:^(UIAlertAction * _Nonnull action) {
         [self.navigationController popViewControllerAnimated:YES];
-    }else if (buttonIndex==1){
-        //点击取消按钮
-    }
+    }];
+    
+    [alertController addAction:cancelAction];
+    [alertController addAction:desttructiveAction];
+    
+    [self presentViewController:alertController animated:YES completion:nil];
+    
+
 }
+
+
+
+//- (IBAction)loginOutClick:(id)sender {
+//    //注销
+//    UIActionSheet *sheet = [[UIActionSheet alloc]initWithTitle:@"提醒" delegate:self cancelButtonTitle:@"取消" destructiveButtonTitle:@"确认" otherButtonTitles:nil, nil];
+//    
+//    [sheet showInView:self.view];
+//    
+////    [self.navigationController popViewControllerAnimated:YES];
+//}
+//
+//
+//- (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex
+//{
+////    NSLog(@"%ld",buttonIndex);
+//    if (buttonIndex==0) {
+//        //点击确认按钮
+//        [self.navigationController popViewControllerAnimated:YES];
+//    }else if (buttonIndex==1){
+//        //点击取消按钮
+//    }
+//}
 
 
 
