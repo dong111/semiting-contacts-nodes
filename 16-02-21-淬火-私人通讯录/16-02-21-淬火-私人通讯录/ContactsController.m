@@ -34,12 +34,25 @@
 }
 
 - (IBAction)loginOutClick:(id)sender {
+    //注销
+    UIActionSheet *sheet = [[UIActionSheet alloc]initWithTitle:@"提醒" delegate:self cancelButtonTitle:@"取消" destructiveButtonTitle:@"确认" otherButtonTitles:nil, nil];
     
-    [self.navigationController popViewControllerAnimated:YES];
+    [sheet showInView:self.view];
+    
+//    [self.navigationController popViewControllerAnimated:YES];
 }
 
 
-
+- (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+//    NSLog(@"%ld",buttonIndex);
+    if (buttonIndex==0) {
+        //点击确认按钮
+        [self.navigationController popViewControllerAnimated:YES];
+    }else if (buttonIndex==1){
+        //点击取消按钮
+    }
+}
 
 
 

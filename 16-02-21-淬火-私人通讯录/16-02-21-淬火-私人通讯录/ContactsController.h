@@ -11,7 +11,7 @@
 #import "Contact.h"
 #import "EditContactController.h"
 
-@interface ContactsController : UITableViewController <AddContactControllerDelegate,EditContactControllerDelegate>
+@interface ContactsController : UITableViewController <AddContactControllerDelegate,EditContactControllerDelegate,UIActionSheetDelegate>
 
 @property (nonatomic,strong) NSString *userName;
 
