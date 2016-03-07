@@ -38,7 +38,7 @@
     
     //设置开往的默认值
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    、
+    
     self.remeberPwdSWitch.on = [defaults boolForKey:remenberPwdKey];
     self.autoLoginSwitch.on = [defaults boolForKey:autoLoginKey];
     
