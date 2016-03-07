@@ -16,6 +16,9 @@
 		2B1813CD1C8D6818003A5F43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B1813CB1C8D6818003A5F43 /* LaunchScreen.storyboard */; };
 		2B1813D81C8D6818003A5F43 /* _6_03_07______TabBar____Storyboard_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B1813D71C8D6818003A5F43 /* _6_03_07______TabBar____Storyboard_Tests.m */; };
 		2B1813E31C8D6818003A5F43 /* _6_03_07______TabBar____Storyboard_UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B1813E21C8D6818003A5F43 /* _6_03_07______TabBar____Storyboard_UITests.m */; };
+		2B1813F61C8D69F9003A5F43 /* OneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B1813F11C8D69F9003A5F43 /* OneViewController.m */; };
+		2B1813F71C8D69F9003A5F43 /* ThreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B1813F31C8D69F9003A5F43 /* ThreeViewController.m */; };
+		2B1813F81C8D69F9003A5F43 /* TwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B1813F51C8D69F9003A5F43 /* TwoViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,12 @@
 		2B1813DE1C8D6818003A5F43 /* 16-03_07-(熔炼)-TabBar控制器(Storyboard)UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "16-03_07-(熔炼)-TabBar控制器(Storyboard)UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B1813E21C8D6818003A5F43 /* _6_03_07______TabBar____Storyboard_UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_6_03_07______TabBar____Storyboard_UITests.m"; sourceTree = "<group>"; };
 		2B1813E41C8D6818003A5F43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B1813F01C8D69F9003A5F43 /* OneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OneViewController.h; sourceTree = "<group>"; };
+		2B1813F11C8D69F9003A5F43 /* OneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneViewController.m; sourceTree = "<group>"; };
+		2B1813F21C8D69F9003A5F43 /* ThreeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreeViewController.h; sourceTree = "<group>"; };
+		2B1813F31C8D69F9003A5F43 /* ThreeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThreeViewController.m; sourceTree = "<group>"; };
+		2B1813F41C8D69F9003A5F43 /* TwoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoViewController.h; sourceTree = "<group>"; };
+		2B1813F51C8D69F9003A5F43 /* TwoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +112,12 @@
 		2B1813B91C8D6818003A5F43 /* 16-03_07-(熔炼)-TabBar控制器(Storyboard) */ = {
 			isa = PBXGroup;
 			children = (
+				2B1813F01C8D69F9003A5F43 /* OneViewController.h */,
+				2B1813F11C8D69F9003A5F43 /* OneViewController.m */,
+				2B1813F21C8D69F9003A5F43 /* ThreeViewController.h */,
+				2B1813F31C8D69F9003A5F43 /* ThreeViewController.m */,
+				2B1813F41C8D69F9003A5F43 /* TwoViewController.h */,
+				2B1813F51C8D69F9003A5F43 /* TwoViewController.m */,
 				2B1813BD1C8D6818003A5F43 /* AppDelegate.h */,
 				2B1813BE1C8D6818003A5F43 /* AppDelegate.m */,
 				2B1813C01C8D6818003A5F43 /* ViewController.h */,
@@ -273,8 +288,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B1813F81C8D69F9003A5F43 /* TwoViewController.m in Sources */,
 				2B1813C21C8D6818003A5F43 /* ViewController.m in Sources */,
+				2B1813F61C8D69F9003A5F43 /* OneViewController.m in Sources */,
 				2B1813BF1C8D6818003A5F43 /* AppDelegate.m in Sources */,
+				2B1813F71C8D69F9003A5F43 /* ThreeViewController.m in Sources */,
 				2B1813BC1C8D6818003A5F43 /* main.m in Sources */,
 				2B1813C81C8D6818003A5F43 /* _6_03_07______TabBar____Storyboard_.xcdatamodeld in Sources */,
 			);
