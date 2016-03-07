@@ -18,23 +18,44 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
      //1.创建窗口
+    UIWindow *window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     
-    //设置窗口的跟控制器为tabBar控制器
     //2.1创建tabbar控制器
+    UITabBarController *tbCv = [[UITabBarController alloc] init];
+    
+    
     //2.2设置子控制器
+    UIViewController *vc1 = [[UIViewController alloc] init];
+    vc1.view.backgroundColor = [UIColor redColor];
     // 设置UITabbarButton的标题
+    vc1.tabBarItem.title = @"联系人";
+    vc1.tabBarItem.image = [UIImage imageNamed:@"tab_buddy_nor"];
     
+    //2.2设置子控制器
+    UIViewController *vc2 = [[UIViewController alloc] init];
+    vc2.view.backgroundColor = [UIColor blueColor];
+    // 设置UITabbarButton的标题
+    vc2.tabBarItem.title = @"设置";
+    vc2.tabBarItem.image = [UIImage imageNamed:@"tab_me_nor"];
+    
+    //2.2设置子控制器
+    UIViewController *vc3 = [[UIViewController alloc] init];
+    vc3.view.backgroundColor = [UIColor yellowColor];
+    // 设置UITabbarButton的标题
+    vc3.tabBarItem.title = @"收藏人";
+    vc3.tabBarItem.image = [UIImage imageNamed:@"tab_qworld_nor"];
+    
+    
+    
+
     //添加tabbar子控制器,设置为window的根控制器
-    
-    
+    tbCv.viewControllers = @[vc1,vc2,vc3];
+    window.rootViewController = tbCv;
     //3.设置窗口为主窗口并且可见
     
     
-    
-    
-    
-    
-    
+    [window makeKeyAndVisible];
+    self.window = window;
     return YES;
 }
 
