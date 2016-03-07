@@ -30,6 +30,9 @@
     // 设置UITabbarButton的标题
     vc1.tabBarItem.title = @"联系人";
     vc1.tabBarItem.image = [UIImage imageNamed:@"tab_buddy_nor"];
+//    vc1.tabBarItem.selectedImage  选择时候图片设置
+//    vc1.tabBarItem.badgeValue  消息数字显示
+    vc1.tabBarItem.badgeValue = @"11";
     
     //2.2设置子控制器
     UIViewController *vc2 = [[UIViewController alloc] init];
@@ -50,6 +53,7 @@
 
     //添加tabbar子控制器,设置为window的根控制器
     tbCv.viewControllers = @[vc1,vc2,vc3];
+    //还可以通过 //[tbCv addChildViewController:vc1]; 添加自控制器
     window.rootViewController = tbCv;
     //3.设置窗口为主窗口并且可见
     
