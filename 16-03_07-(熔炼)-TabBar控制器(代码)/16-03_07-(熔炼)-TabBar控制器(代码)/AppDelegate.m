@@ -16,7 +16,25 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+     //1.创建窗口
+    
+    //设置窗口的跟控制器为tabBar控制器
+    //2.1创建tabbar控制器
+    //2.2设置子控制器
+    // 设置UITabbarButton的标题
+    
+    //添加tabbar子控制器,设置为window的根控制器
+    
+    
+    //3.设置窗口为主窗口并且可见
+    
+    
+    
+    
+    
+    
+    
     return YES;
 }
 
