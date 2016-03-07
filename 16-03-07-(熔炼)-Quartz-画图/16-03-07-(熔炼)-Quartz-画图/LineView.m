@@ -19,8 +19,56 @@
 */
 
 - (void)drawRect:(CGRect)rect {
-    [self drawRectangle];
+    [self drawCircle];
 }
+
+#pragma -mark 画圆
+- (void) drawCircle
+{
+    //获取画图上下文
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    // 设置线颜色
+    CGContextSetRGBStrokeColor(context, 1.0, 0.0, 0.0, 1);
+    
+    //画圆
+    CGContextAddEllipseInRect(context, CGRectMake(100, 100, 10, 10));
+    
+    CGContextStrokePath(context);
+
+}
+
+
+#pragma -mark 画扇形
+- (void)drawSector
+{
+    //获取画图上下文
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    // 设置线颜色
+    CGContextSetRGBStrokeColor(context, 1.0, 0.0, 0.0, 1);
+    //设置一个起点  这个起点还是需要的 否则不是弧，不会连接中心店
+    CGContextMoveToPoint(context, 100, 100);
+    
+    
+
+//    x The x-value, in user space coordinates, for the center of the arc.
+    //弧 中心点x coordinates 中心点
+//    y The y-value, in user space coordinates, for the center of the arc.
+    //弧 中心点y
+//    radius The radius of the arc, in user space coordinates.
+    // 半径
+//    startAngle The angle to the starting point of the arc, measured in radians from the positive x-axis.
+    //开始角度
+//    endAngle The angle to the end point of the arc, measured in radians from the positive x-axis.
+    //结束角度
+//    clockwise Specify 1 to create a clockwise arc or 0 to create a counterclockwise arc.
+    //clockwise 顺时针方向 counterclockwise 你是猪方向
+    CGContextAddArc(context, 100, 100, 50, -M_PI_4, 3*-M_PI_4, 1);
+    
+    CGContextClosePath(context);
+    
+    CGContextStrokePath(context);
+}
+
 
 #pragma -mark画矩形
 - (void) drawRectangle
