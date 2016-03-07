@@ -19,9 +19,52 @@
 */
 
 - (void)drawRect:(CGRect)rect {
-    [self drawLine2];
+    [self drawRectangle];
 }
 
+#pragma -mark画矩形
+- (void) drawRectangle
+{
+    //获取画图上下文
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    
+    // 设置线颜色
+    CGContextSetRGBStrokeColor(context, 1.0, 0.0, 0.0, 1);
+    
+    CGContextSetRGBFillColor(context, 1.0, 0.0, 0.0, 1);
+    
+    //画矩形
+    CGContextAddRect(context, CGRectMake(10, 10, 100, 100));
+    //画一条线
+//    CGContextStrokePath(context);
+    //填充（实心）
+    CGContextFillPath(context);
+}
+
+#pragma -mark 画三角形
+- (void) drawTriangle
+{
+    //获取画图上下文
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    
+    //设置线的颜色
+    CGContextSetRGBStrokeColor(context, 1.0, 0.0, 0.0, 1);
+    //确定线的起点
+    CGContextMoveToPoint(context, 10, 10);
+    
+    //确定线的终点
+    CGContextAddLineToPoint(context, 300, 50);
+    CGContextAddLineToPoint(context, 200, 100);
+    
+    //***关闭路径
+    CGContextClosePath(context);
+    //渲染
+    CGContextStrokePath(context);
+    
+}
+
+
+#pragma --mark 画线
 //画一有颜色很粗的条线
 - (void) drawLine2
 {
