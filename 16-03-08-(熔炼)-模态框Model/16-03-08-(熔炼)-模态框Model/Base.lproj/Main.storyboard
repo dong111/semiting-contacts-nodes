@@ -75,17 +75,20 @@
             </objects>
             <point key="canvasLocation" x="-111" y="345"/>
         </scene>
-        <!--Title-->
+        <!--注册-->
         <scene sceneID="VwB-aO-ZKw">
             <objects>
-                <tableViewController id="Zlg-wX-1to" sceneMemberID="viewController">
+                <tableViewController id="Zlg-wX-1to" customClass="RegisterViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="sAW-9O-mNt">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="8JB-XP-WnJ">
+                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8JB-XP-WnJ" id="PjD-gK-Tmj">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -95,7 +98,13 @@
                             <outlet property="delegate" destination="Zlg-wX-1to" id="w7E-rt-f0R"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Title" id="trb-4Z-6ZK"/>
+                    <navigationItem key="navigationItem" title="注册" id="trb-4Z-6ZK">
+                        <barButtonItem key="leftBarButtonItem" title="返回" id="uBX-mz-f8X">
+                            <connections>
+                                <action selector="goback:" destination="Zlg-wX-1to" id="Vem-pe-DUF"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pgo-ZA-qX8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
