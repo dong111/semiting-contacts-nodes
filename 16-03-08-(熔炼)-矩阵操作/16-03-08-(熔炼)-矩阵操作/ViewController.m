@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "CZCustomView.h"
+#import "CircleImageView.h"
 
 @interface ViewController ()
 
@@ -20,9 +21,20 @@
     // Do any additional setup after loading the view, typically from a nib.
     
     //1.自定义一个CircleImageView控件，在drawRect中，获取上下文，往上下文中添加一个圆的路径
+    
+    
     // 2.自定义的控制中，添加一个imageName属性，
     
     // 3.把自定的view添加到控制器View
+    CircleImageView *cirView = [[CircleImageView alloc] initWithFrame:CGRectMake(10, 40, 100, 100)];
+    cirView.backgroundColor = [UIColor lightGrayColor];
+    cirView.imageName = @"papa";
+    cirView.borderWidth  = 3;
+    cirView.borderColor = [UIColor redColor];
+    
+    [self.view addSubview:cirView];
+    
+    
     
     // 4.然后回到drawrect方法画图 调用CGContextClip的方法，裁剪路径之外多余的部分
     
