@@ -28,7 +28,11 @@
 //代码实现模态框显示
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {
-    RegisterViewController *rgVc = [[RegisterViewController alloc] init];
+//    RegisterViewController *rgVc = [[RegisterViewController alloc] init];
+    
+    //通过storyBoard Id 从storyBoard中加载控制器
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    RegisterViewController *rgVc =  [storyboard instantiateViewControllerWithIdentifier:@"register"];
     
     //弹窗模态框方法
     [self presentViewController:rgVc animated:YES completion:^{
