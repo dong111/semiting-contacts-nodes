@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "RegisterViewController.h"
 
 @interface ViewController ()
 
@@ -22,6 +23,18 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+//代码实现模态框显示
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+    RegisterViewController *rgVc = [[RegisterViewController alloc] init];
+    
+    //弹窗模态框方法
+    [self presentViewController:rgVc animated:YES completion:^{
+        NSLog(@"弹出注册模态框了！");
+    }];
+
 }
 
 @end
