@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "CZCustomView.h"
 
 @interface ViewController ()
 
@@ -17,6 +18,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    CZCustomView *view = [[CZCustomView alloc] init];
+    view.frame = CGRectMake(50, 50, 300, 300);
+    view.backgroundColor = [UIColor lightGrayColor];
+    [self.view addSubview:view];
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
