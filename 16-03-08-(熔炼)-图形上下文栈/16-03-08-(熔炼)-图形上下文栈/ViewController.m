@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "CDCustomView.h"
 
 @interface ViewController ()
 
@@ -17,6 +18,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    //添加自定义view 到RootView
+    CDCustomView *customView = [[CDCustomView alloc] init];
+    customView.frame = CGRectMake(50, 50, 300, 300);
+    customView.backgroundColor = [UIColor lightGrayColor];
+    
+    [self.view addSubview:customView];
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
