@@ -16,6 +16,7 @@
 		2B1814A81C8E8D84003A5F43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B1814A61C8E8D84003A5F43 /* LaunchScreen.storyboard */; };
 		2B1814B31C8E8D84003A5F43 /* _6_03_08_________ModelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B1814B21C8E8D84003A5F43 /* _6_03_08_________ModelTests.m */; };
 		2B1814BE1C8E8D84003A5F43 /* _6_03_08_________ModelUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B1814BD1C8E8D84003A5F43 /* _6_03_08_________ModelUITests.m */; };
+		2B397CE91C8E8F920068C0C3 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B397CE81C8E8F920068C0C3 /* RegisterViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		2B1814B91C8E8D84003A5F43 /* 16-03-08-(熔炼)-模态框ModelUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "16-03-08-(熔炼)-模态框ModelUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B1814BD1C8E8D84003A5F43 /* _6_03_08_________ModelUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_6_03_08_________ModelUITests.m"; sourceTree = "<group>"; };
 		2B1814BF1C8E8D84003A5F43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B397CE71C8E8F920068C0C3 /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
+		2B397CE81C8E8F920068C0C3 /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +116,8 @@
 				2B1814A91C8E8D84003A5F43 /* Info.plist */,
 				2B1814A11C8E8D84003A5F43 /* _6_03_08_________Model.xcdatamodeld */,
 				2B1814951C8E8D84003A5F43 /* Supporting Files */,
+				2B397CE71C8E8F920068C0C3 /* RegisterViewController.h */,
+				2B397CE81C8E8F920068C0C3 /* RegisterViewController.m */,
 			);
 			path = "16-03-08-(熔炼)-模态框Model";
 			sourceTree = "<group>";
@@ -273,6 +278,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B397CE91C8E8F920068C0C3 /* RegisterViewController.m in Sources */,
 				2B18149D1C8E8D84003A5F43 /* ViewController.m in Sources */,
 				2B1814A31C8E8D84003A5F43 /* _6_03_08_________Model.xcdatamodeld in Sources */,
 				2B18149A1C8E8D84003A5F43 /* AppDelegate.m in Sources */,
@@ -502,6 +508,7 @@
 				2B1814C41C8E8D84003A5F43 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2B1814C51C8E8D84003A5F43 /* Build configuration list for PBXNativeTarget "16-03-08-(熔炼)-模态框ModelTests" */ = {
 			isa = XCConfigurationList;
@@ -510,6 +517,7 @@
 				2B1814C71C8E8D84003A5F43 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2B1814C81C8E8D84003A5F43 /* Build configuration list for PBXNativeTarget "16-03-08-(熔炼)-模态框ModelUITests" */ = {
 			isa = XCConfigurationList;
@@ -518,6 +526,7 @@
 				2B1814CA1C8E8D84003A5F43 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
