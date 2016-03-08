@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "CZCustomView.h"
 #import "CircleImageView.h"
+#import "CGMutablePathRefUsageView.h"
 
 @interface ViewController ()
 
@@ -20,6 +21,24 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
+    CGMutablePathRefUsageView *pathView = [[CGMutablePathRefUsageView alloc] initWithFrame:CGRectMake(50, 50, 300, 300)];
+    
+    pathView.backgroundColor = [UIColor lightGrayColor];
+    [self.view addSubview:pathView];
+    
+    
+}
+//CGMutablePathRef 的用法
+- (void) CGMutablePathRefUsage
+{
+
+}
+
+
+//实现圆角图片
+- (void) drawCircleImageView
+{
+
     //1.自定义一个CircleImageView控件，在drawRect中，获取上下文，往上下文中添加一个圆的路径
     
     
@@ -40,9 +59,8 @@
     
     // 5.画圆的边框，使用CGContextAddEllipseInRect添加圆的路径，并使用CGContextStrokePath画空心圆;
 
-    
-    
 }
+
 //自定义的一些操作  平移 旋转
 - (void) doSomethings
 {
