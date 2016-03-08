@@ -16,6 +16,7 @@
 		2B397D091C8E93170068C0C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B397D071C8E93170068C0C3 /* LaunchScreen.storyboard */; };
 		2B397D141C8E93170068C0C3 /* _6_03_08______Quartz2d___Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B397D131C8E93170068C0C3 /* _6_03_08______Quartz2d___Tests.m */; };
 		2B397D1F1C8E93170068C0C3 /* _6_03_08______Quartz2d___UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B397D1E1C8E93170068C0C3 /* _6_03_08______Quartz2d___UITests.m */; };
+		2B397D2E1C8E95620068C0C3 /* CDPieChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B397D2D1C8E95620068C0C3 /* CDPieChartView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		2B397D1A1C8E93170068C0C3 /* 16-03-08-(熔炼)-Quartz2d饼状图UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "16-03-08-(熔炼)-Quartz2d饼状图UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B397D1E1C8E93170068C0C3 /* _6_03_08______Quartz2d___UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_6_03_08______Quartz2d___UITests.m"; sourceTree = "<group>"; };
 		2B397D201C8E93170068C0C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B397D2C1C8E95620068C0C3 /* CDPieChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDPieChartView.h; sourceTree = "<group>"; };
+		2B397D2D1C8E95620068C0C3 /* CDPieChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDPieChartView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +116,8 @@
 				2B397D0A1C8E93170068C0C3 /* Info.plist */,
 				2B397D021C8E93160068C0C3 /* _6_03_08______Quartz2d___.xcdatamodeld */,
 				2B397CF61C8E93160068C0C3 /* Supporting Files */,
+				2B397D2C1C8E95620068C0C3 /* CDPieChartView.h */,
+				2B397D2D1C8E95620068C0C3 /* CDPieChartView.m */,
 			);
 			path = "16-03-08-(熔炼)-Quartz2d饼状图";
 			sourceTree = "<group>";
@@ -276,6 +281,7 @@
 				2B397D041C8E93160068C0C3 /* _6_03_08______Quartz2d___.xcdatamodeld in Sources */,
 				2B397CFE1C8E93160068C0C3 /* ViewController.m in Sources */,
 				2B397CFB1C8E93160068C0C3 /* AppDelegate.m in Sources */,
+				2B397D2E1C8E95620068C0C3 /* CDPieChartView.m in Sources */,
 				2B397CF81C8E93160068C0C3 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

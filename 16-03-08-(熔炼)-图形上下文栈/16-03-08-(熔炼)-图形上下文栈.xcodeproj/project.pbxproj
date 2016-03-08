@@ -16,6 +16,7 @@
 		2B397D4E1C8E96B90068C0C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B397D4C1C8E96B90068C0C3 /* LaunchScreen.storyboard */; };
 		2B397D591C8E96B90068C0C3 /* _6_03_08____________Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B397D581C8E96B90068C0C3 /* _6_03_08____________Tests.m */; };
 		2B397D641C8E96B90068C0C3 /* _6_03_08____________UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B397D631C8E96B90068C0C3 /* _6_03_08____________UITests.m */; };
+		2B397D731C8E97070068C0C3 /* CDCustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B397D721C8E97070068C0C3 /* CDCustomView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		2B397D5F1C8E96B90068C0C3 /* 16-03-08-(熔炼)-图形上下文栈UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "16-03-08-(熔炼)-图形上下文栈UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B397D631C8E96B90068C0C3 /* _6_03_08____________UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_6_03_08____________UITests.m"; sourceTree = "<group>"; };
 		2B397D651C8E96B90068C0C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B397D711C8E97070068C0C3 /* CDCustomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDCustomView.h; sourceTree = "<group>"; };
+		2B397D721C8E97070068C0C3 /* CDCustomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDCustomView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +116,8 @@
 				2B397D4F1C8E96B90068C0C3 /* Info.plist */,
 				2B397D471C8E96B90068C0C3 /* _6_03_08____________.xcdatamodeld */,
 				2B397D3B1C8E96B90068C0C3 /* Supporting Files */,
+				2B397D711C8E97070068C0C3 /* CDCustomView.h */,
+				2B397D721C8E97070068C0C3 /* CDCustomView.m */,
 			);
 			path = "16-03-08-(熔炼)-图形上下文栈";
 			sourceTree = "<group>";
@@ -277,6 +282,7 @@
 				2B397D491C8E96B90068C0C3 /* _6_03_08____________.xcdatamodeld in Sources */,
 				2B397D401C8E96B90068C0C3 /* AppDelegate.m in Sources */,
 				2B397D3D1C8E96B90068C0C3 /* main.m in Sources */,
+				2B397D731C8E97070068C0C3 /* CDCustomView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
