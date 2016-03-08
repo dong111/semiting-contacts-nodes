@@ -19,8 +19,33 @@
 */
 
 - (void)drawRect:(CGRect)rect {
-    [self drawCircle];
+    [self drawTextImage:rect];
 }
+
+- (void) drawTextImage:(CGRect)rect
+{
+    CGFloat width = rect.size.width;
+    CGFloat height = rect.size.height;
+    
+    //画图片
+    UIImage *image = [UIImage imageNamed:@"tabbar_bg"];
+//    [image drawAtPoint:CGPointZero];
+//    [image drawInRect:CGRectMake(0, 0, 100, 100)];
+    
+    //平铺
+    [image drawAsPatternInRect:CGRectMake(0, 0, width, height)];
+    
+    
+    //画文字
+    NSString *text = @"弹幕文字，小广告，水印文字弹幕文字，小广告，水印文字弹幕文字，小广告，水印文字弹幕文字，小广告，水印文字弹幕文字，小广告，水印文字弹幕文字，小广告，水印文字弹幕文字，小广告，水印文字弹幕文字，小广告，水印文字弹幕文字，小广告，水印文字";
+    
+    //设置字体样式
+    NSDictionary *attrs = @{NSFontAttributeName:[UIFont systemFontOfSize:13],NSForegroundColorAttributeName:[UIColor redColor]};
+    
+    [text drawInRect:CGRectMake(0, 0, width, height/2) withAttributes:attrs];
+    
+}
+
 
 #pragma -mark 画圆
 - (void) drawCircle
