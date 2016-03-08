@@ -16,6 +16,8 @@
 		2B18145A1C8DD471003A5F43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B1814581C8DD471003A5F43 /* LaunchScreen.storyboard */; };
 		2B1814651C8DD471003A5F43 /* _6_03_07______Quartz___Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B1814641C8DD471003A5F43 /* _6_03_07______Quartz___Tests.m */; };
 		2B1814701C8DD471003A5F43 /* _6_03_07______Quartz___UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B18146F1C8DD471003A5F43 /* _6_03_07______Quartz___UITests.m */; };
+		2B1814801C8DD53E003A5F43 /* LineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B18147F1C8DD53E003A5F43 /* LineView.m */; };
+		2B1814881C8E61F7003A5F43 /* ProgressCircle.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B1814871C8E61F7003A5F43 /* ProgressCircle.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,10 @@
 		2B18146B1C8DD471003A5F43 /* 16-03-07-(熔炼)-Quartz-画图UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "16-03-07-(熔炼)-Quartz-画图UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B18146F1C8DD471003A5F43 /* _6_03_07______Quartz___UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_6_03_07______Quartz___UITests.m"; sourceTree = "<group>"; };
 		2B1814711C8DD471003A5F43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B18147E1C8DD53E003A5F43 /* LineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LineView.h; sourceTree = "<group>"; };
+		2B18147F1C8DD53E003A5F43 /* LineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LineView.m; sourceTree = "<group>"; };
+		2B1814861C8E61F7003A5F43 /* ProgressCircle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressCircle.h; sourceTree = "<group>"; };
+		2B1814871C8E61F7003A5F43 /* ProgressCircle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressCircle.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +109,8 @@
 		2B1814461C8DD471003A5F43 /* 16-03-07-(熔炼)-Quartz-画图 */ = {
 			isa = PBXGroup;
 			children = (
+				2B1814851C8E61C3003A5F43 /* Progress */,
+				2B18147D1C8DD510003A5F43 /* lineView */,
 				2B18144A1C8DD471003A5F43 /* AppDelegate.h */,
 				2B18144B1C8DD471003A5F43 /* AppDelegate.m */,
 				2B18144D1C8DD471003A5F43 /* ViewController.h */,
@@ -141,6 +149,24 @@
 				2B1814711C8DD471003A5F43 /* Info.plist */,
 			);
 			path = "16-03-07-(熔炼)-Quartz-画图UITests";
+			sourceTree = "<group>";
+		};
+		2B18147D1C8DD510003A5F43 /* lineView */ = {
+			isa = PBXGroup;
+			children = (
+				2B18147E1C8DD53E003A5F43 /* LineView.h */,
+				2B18147F1C8DD53E003A5F43 /* LineView.m */,
+			);
+			name = lineView;
+			sourceTree = "<group>";
+		};
+		2B1814851C8E61C3003A5F43 /* Progress */ = {
+			isa = PBXGroup;
+			children = (
+				2B1814861C8E61F7003A5F43 /* ProgressCircle.h */,
+				2B1814871C8E61F7003A5F43 /* ProgressCircle.m */,
+			);
+			name = Progress;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -277,6 +303,8 @@
 				2B18144C1C8DD471003A5F43 /* AppDelegate.m in Sources */,
 				2B1814491C8DD471003A5F43 /* main.m in Sources */,
 				2B1814551C8DD471003A5F43 /* _6_03_07______Quartz___.xcdatamodeld in Sources */,
+				2B1814881C8E61F7003A5F43 /* ProgressCircle.m in Sources */,
+				2B1814801C8DD53E003A5F43 /* LineView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
