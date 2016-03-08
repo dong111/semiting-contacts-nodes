@@ -16,6 +16,9 @@
 		2B3FB4E71C8ECE6800BE648C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B3FB4E51C8ECE6800BE648C /* LaunchScreen.storyboard */; };
 		2B3FB4F21C8ECE6800BE648C /* _6_03_08__________Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B3FB4F11C8ECE6800BE648C /* _6_03_08__________Tests.m */; };
 		2B3FB4FD1C8ECE6800BE648C /* _6_03_08__________UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B3FB4FC1C8ECE6800BE648C /* _6_03_08__________UITests.m */; };
+		2B3FB50C1C8ECEF400BE648C /* CZCustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B3FB50B1C8ECEF400BE648C /* CZCustomView.m */; };
+		2B3FB50F1C8ED41200BE648C /* CircleImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B3FB50E1C8ED41200BE648C /* CircleImageView.m */; };
+		2B3FB5121C8EFD1E00BE648C /* CGMutablePathRefUsageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B3FB5111C8EFD1E00BE648C /* CGMutablePathRefUsageView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,12 @@
 		2B3FB4F81C8ECE6800BE648C /* 16-03-08-(熔炼)-矩阵操作UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "16-03-08-(熔炼)-矩阵操作UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B3FB4FC1C8ECE6800BE648C /* _6_03_08__________UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_6_03_08__________UITests.m"; sourceTree = "<group>"; };
 		2B3FB4FE1C8ECE6800BE648C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B3FB50A1C8ECEF400BE648C /* CZCustomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZCustomView.h; sourceTree = "<group>"; };
+		2B3FB50B1C8ECEF400BE648C /* CZCustomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZCustomView.m; sourceTree = "<group>"; };
+		2B3FB50D1C8ED41200BE648C /* CircleImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleImageView.h; sourceTree = "<group>"; };
+		2B3FB50E1C8ED41200BE648C /* CircleImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleImageView.m; sourceTree = "<group>"; };
+		2B3FB5101C8EFD1E00BE648C /* CGMutablePathRefUsageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGMutablePathRefUsageView.h; sourceTree = "<group>"; };
+		2B3FB5111C8EFD1E00BE648C /* CGMutablePathRefUsageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGMutablePathRefUsageView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +122,12 @@
 				2B3FB4E81C8ECE6800BE648C /* Info.plist */,
 				2B3FB4E01C8ECE6800BE648C /* _6_03_08__________.xcdatamodeld */,
 				2B3FB4D41C8ECE6800BE648C /* Supporting Files */,
+				2B3FB50A1C8ECEF400BE648C /* CZCustomView.h */,
+				2B3FB50B1C8ECEF400BE648C /* CZCustomView.m */,
+				2B3FB50D1C8ED41200BE648C /* CircleImageView.h */,
+				2B3FB50E1C8ED41200BE648C /* CircleImageView.m */,
+				2B3FB5101C8EFD1E00BE648C /* CGMutablePathRefUsageView.h */,
+				2B3FB5111C8EFD1E00BE648C /* CGMutablePathRefUsageView.m */,
 			);
 			path = "16-03-08-(熔炼)-矩阵操作";
 			sourceTree = "<group>";
@@ -273,9 +288,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B3FB50C1C8ECEF400BE648C /* CZCustomView.m in Sources */,
 				2B3FB4DC1C8ECE6800BE648C /* ViewController.m in Sources */,
+				2B3FB50F1C8ED41200BE648C /* CircleImageView.m in Sources */,
 				2B3FB4D91C8ECE6800BE648C /* AppDelegate.m in Sources */,
 				2B3FB4D61C8ECE6800BE648C /* main.m in Sources */,
+				2B3FB5121C8EFD1E00BE648C /* CGMutablePathRefUsageView.m in Sources */,
 				2B3FB4E21C8ECE6800BE648C /* _6_03_08__________.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
