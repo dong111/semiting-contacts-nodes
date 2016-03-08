@@ -22,6 +22,13 @@
     //获取CGContextRef 上下文
      CGContextRef ctx = UIGraphicsGetCurrentContext();
     
+    //通过3个点画三角形
+    CGPoint points[3] = {{50,20},{100,80},{10,80}};
+    CGContextAddLines(ctx, points, 3);
+    CGContextClosePath(ctx);//合并路径
+    
+    
+    CGContextStrokePath(ctx);
 }
 
 @end
