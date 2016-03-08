@@ -22,6 +22,11 @@
     [self drawTextImage:rect];
 }
 
+
+
+
+
+#pragma -mark 画文字和图片
 - (void) drawTextImage:(CGRect)rect
 {
     CGFloat width = rect.size.width;
