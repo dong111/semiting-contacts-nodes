@@ -16,6 +16,7 @@
 		2B3FB5FB1C8FBA0A00BE648C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B3FB5F91C8FBA0A00BE648C /* LaunchScreen.storyboard */; };
 		2B3FB6061C8FBA0A00BE648C /* _6_03_09__________Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B3FB6051C8FBA0A00BE648C /* _6_03_09__________Tests.m */; };
 		2B3FB6111C8FBA0A00BE648C /* _6_03_09__________UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B3FB6101C8FBA0A00BE648C /* _6_03_09__________UITests.m */; };
+		2B3FB6221C8FBD2600BE648C /* UIImage+CD.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B3FB6211C8FBD2600BE648C /* UIImage+CD.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		2B3FB60C1C8FBA0A00BE648C /* 16-03-09-(熔炼)-水印图片UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "16-03-09-(熔炼)-水印图片UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B3FB6101C8FBA0A00BE648C /* _6_03_09__________UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_6_03_09__________UITests.m"; sourceTree = "<group>"; };
 		2B3FB6121C8FBA0A00BE648C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B3FB6201C8FBD2600BE648C /* UIImage+CD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+CD.h"; sourceTree = "<group>"; };
+		2B3FB6211C8FBD2600BE648C /* UIImage+CD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+CD.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +116,8 @@
 				2B3FB5FC1C8FBA0A00BE648C /* Info.plist */,
 				2B3FB5F41C8FBA0A00BE648C /* _6_03_09__________.xcdatamodeld */,
 				2B3FB5E81C8FBA0A00BE648C /* Supporting Files */,
+				2B3FB6201C8FBD2600BE648C /* UIImage+CD.h */,
+				2B3FB6211C8FBD2600BE648C /* UIImage+CD.m */,
 			);
 			path = "16-03-09-(熔炼)-水印图片";
 			sourceTree = "<group>";
@@ -275,6 +280,7 @@
 			files = (
 				2B3FB5F61C8FBA0A00BE648C /* _6_03_09__________.xcdatamodeld in Sources */,
 				2B3FB5F01C8FBA0A00BE648C /* ViewController.m in Sources */,
+				2B3FB6221C8FBD2600BE648C /* UIImage+CD.m in Sources */,
 				2B3FB5ED1C8FBA0A00BE648C /* AppDelegate.m in Sources */,
 				2B3FB5EA1C8FBA0A00BE648C /* main.m in Sources */,
 			);
