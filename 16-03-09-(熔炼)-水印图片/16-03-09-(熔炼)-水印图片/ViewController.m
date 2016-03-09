@@ -19,10 +19,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
    //将水印图片显示到ImageView
-    self.imageView.image = [UIImage waterImageWithBgImage:@"" waterName:@""];
+    self.imageView.image = [UIImage waterImageWithBgImage:@"scene" waterName:@"logo"];
     
     //将水印图片保存到本地路径
-    [self saveImage:self.imageView.image ToPath:@""];
+    [self saveImage:self.imageView.image ToPath:@"/Users/chendong/Desktop/new.png"];
     
 }
 
