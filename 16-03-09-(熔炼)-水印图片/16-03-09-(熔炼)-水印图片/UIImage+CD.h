@@ -16,5 +16,14 @@
  */
 + (UIImage *) waterImageWithBgImage:(NSString *)bgName waterName:(NSString *)waterName;
 
-
+/**
+ *  图片剪切功能
+ *
+ *  @param imageName   截图名称
+ *  @param borderWith  图片边框宽度
+ *  @param borderColor 图片边框颜色
+ *
+ *  @return 截图图片
+ */
++(UIImage *)circleImageViewWithImageName:(NSString *)imageName borderWith:(CGFloat)borderWith borderColor:(UIColor *)borderColor;
 @end
