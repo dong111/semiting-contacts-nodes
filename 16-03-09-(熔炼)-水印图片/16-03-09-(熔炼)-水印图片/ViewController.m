@@ -18,12 +18,24 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-   //将水印图片显示到ImageView
+    [self testCircleImageMeth];
+
+}
+//测试剪切图片方法
+- (void) testCircleImageMeth
+{
+    self.imageView.image = [UIImage circleImageViewWithImageName:@"papa" borderWith:2 borderColor:[UIColor redColor]];
+}
+/**
+ *  测试水印方法
+ */
+- (void) testWaterImageMeth
+{
+    //将水印图片显示到ImageView
     self.imageView.image = [UIImage waterImageWithBgImage:@"scene" waterName:@"logo"];
     
     //将水印图片保存到本地路径
     [self saveImage:self.imageView.image ToPath:@"/Users/chendong/Desktop/new.png"];
-    
 }
 
 
