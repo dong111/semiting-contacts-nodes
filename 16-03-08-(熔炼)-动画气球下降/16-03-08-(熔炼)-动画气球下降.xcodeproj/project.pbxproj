@@ -16,6 +16,7 @@
 		2B3FB5741C8F00A700BE648C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B3FB5721C8F00A700BE648C /* LaunchScreen.storyboard */; };
 		2B3FB57F1C8F00A700BE648C /* _6_03_08____________Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B3FB57E1C8F00A700BE648C /* _6_03_08____________Tests.m */; };
 		2B3FB58A1C8F00A700BE648C /* _6_03_08____________UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B3FB5891C8F00A700BE648C /* _6_03_08____________UITests.m */; };
+		2B3FB5991C8F010E00BE648C /* BallonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B3FB5981C8F010E00BE648C /* BallonView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		2B3FB5851C8F00A700BE648C /* 16-03-08-(熔炼)-动画气球下降UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "16-03-08-(熔炼)-动画气球下降UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B3FB5891C8F00A700BE648C /* _6_03_08____________UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_6_03_08____________UITests.m"; sourceTree = "<group>"; };
 		2B3FB58B1C8F00A700BE648C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B3FB5971C8F010E00BE648C /* BallonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BallonView.h; sourceTree = "<group>"; };
+		2B3FB5981C8F010E00BE648C /* BallonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BallonView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +116,8 @@
 				2B3FB5751C8F00A700BE648C /* Info.plist */,
 				2B3FB56D1C8F00A700BE648C /* _6_03_08____________.xcdatamodeld */,
 				2B3FB5611C8F00A700BE648C /* Supporting Files */,
+				2B3FB5971C8F010E00BE648C /* BallonView.h */,
+				2B3FB5981C8F010E00BE648C /* BallonView.m */,
 			);
 			path = "16-03-08-(熔炼)-动画气球下降";
 			sourceTree = "<group>";
@@ -276,6 +281,7 @@
 				2B3FB5691C8F00A700BE648C /* ViewController.m in Sources */,
 				2B3FB56F1C8F00A700BE648C /* _6_03_08____________.xcdatamodeld in Sources */,
 				2B3FB5661C8F00A700BE648C /* AppDelegate.m in Sources */,
+				2B3FB5991C8F010E00BE648C /* BallonView.m in Sources */,
 				2B3FB5631C8F00A700BE648C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
