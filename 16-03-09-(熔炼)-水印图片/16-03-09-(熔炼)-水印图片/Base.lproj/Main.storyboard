@@ -23,16 +23,77 @@
                                     <rect key="frame" x="64" y="55" width="259" height="165"/>
                                 </variation>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZLd-XB-j7X">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="161" y="417" width="46" height="30"/>
+                                </variation>
+                            </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="CLV-Fu-g1h">
+                                <rect key="frame" x="-60" y="-14" width="121" height="29"/>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                </segments>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="252" y="410" width="121" height="29"/>
+                                </variation>
+                            </segmentedControl>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ALX-Cm-rjN">
+                                <rect key="frame" x="-25" y="-15" width="51" height="31"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="64" y="483" width="51" height="31"/>
+                                </variation>
+                            </switch>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="I15-Ak-aT9">
+                                <rect key="frame" x="-10" y="-10" width="20" height="20"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="190" y="512" width="20" height="20"/>
+                                </variation>
+                            </activityIndicatorView>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="vFg-px-wJn">
+                                <rect key="frame" x="0.0" y="-2" width="150" height="2"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="190" y="483" width="150" height="2"/>
+                                </variation>
+                            </progressView>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="PPL-Ws-Nmv">
+                                <rect key="frame" x="0.0" y="-15" width="118" height="31"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="29" y="351" width="118" height="31"/>
+                                </variation>
+                            </slider>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="JsA-kP-DJo">
+                                <rect key="frame" x="-47" y="-14" width="94" height="29"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="153" y="566" width="94" height="29"/>
+                                </variation>
+                            </stepper>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="mys-8b-kkO"/>
+                                <exclude reference="ZLd-XB-j7X"/>
+                                <exclude reference="CLV-Fu-g1h"/>
+                                <exclude reference="ALX-Cm-rjN"/>
+                                <exclude reference="I15-Ak-aT9"/>
+                                <exclude reference="vFg-px-wJn"/>
+                                <exclude reference="PPL-Ws-Nmv"/>
+                                <exclude reference="JsA-kP-DJo"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
                                 <include reference="mys-8b-kkO"/>
+                                <include reference="ZLd-XB-j7X"/>
+                                <include reference="CLV-Fu-g1h"/>
+                                <include reference="ALX-Cm-rjN"/>
+                                <include reference="I15-Ak-aT9"/>
+                                <include reference="vFg-px-wJn"/>
+                                <include reference="PPL-Ws-Nmv"/>
+                                <include reference="JsA-kP-DJo"/>
                             </mask>
                         </variation>
                     </view>
