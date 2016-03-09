@@ -21,6 +21,33 @@
     [self testCircleImageMeth];
 
 }
+//截屏方法实现
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+    //1.创建位图【也就意味着，将来绘制的东西最近显示在一张图片上】，并设置大小
+    //    UIGraphicsBeginImageContext(self.view.bounds.size);
+    UIGraphicsBeginImageContextWithOptions(self.view.bounds.size, NO, 0.0);
+    //将当前控制器的view图层渲染到当前上下文
+    [self.view.layer renderInContext:UIGraphicsGetCurrentContext()];
+    
+    //从当前上下文获取图片
+    UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
+
+    
+    //结束位图编辑
+    UIGraphicsEndImageContext();
+    
+    //数据保存到沙盒中去
+    NSData *imgData = UIImagePNGRepresentation(newImage);
+    NSString *doc = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
+    NSLog(@"%@",doc);
+    
+    NSString *imgPath = [doc stringByAppendingString:@"capture.png"];
+    [imgData writeToFile:imgPath atomically:YES];
+    
+}
+
+
 //测试剪切图片方法
 - (void) testCircleImageMeth
 {
